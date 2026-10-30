@@ -1,0 +1,39 @@
+﻿2026-10-30T13:35:13.7657472Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T13:35:13.7659377Z with:
+2026-10-30T13:35:13.7671399Z   github-token: ***
+2026-10-30T13:35:13.7681907Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_failed_jobs.cjs'));
+await main();
+
+2026-10-30T13:35:13.7691082Z   debug: false
+2026-10-30T13:35:13.7692366Z   user-agent: actions/github-script
+2026-10-30T13:35:13.7693690Z   result-encoding: json
+2026-10-30T13:35:13.7694782Z   retries: 0
+2026-10-30T13:35:13.7695885Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T13:35:13.7697474Z env:
+2026-10-30T13:35:13.7698424Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:35:13.7699726Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:35:13.7704252Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:35:13.7718434Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:35:13.7719752Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:35:13.7721158Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:35:13.7723734Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T13:35:13.7727990Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T13:35:13.7731659Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T13:35:13.7733926Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:35:13.7735270Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:35:13.7737037Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a4ad28d30d2d6dda
+2026-10-30T13:35:13.7738651Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367309857
+2026-10-30T13:35:13.7739919Z   GH_AW_AGENT_OUTPUT: 
+2026-10-30T13:35:13.7741575Z   GH_AW_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T13:35:13.7744956Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/biadou/MONA-website-exercise/blob/main/.github/workflows/update-mona-website.md
+2026-10-30T13:35:13.7748269Z   GH_AW_RUN_URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41064379670
+2026-10-30T13:35:13.7750201Z   GH_AW_REPORT_FAILED_JOBS: true
+2026-10-30T13:35:13.7751316Z ##[endgroup]
+2026-10-30T13:35:13.9223606Z Checking GitHub API rate limit before querying jobs
+2026-10-30T13:35:14.1635675Z Skipping builtin job ID: activation (handled by dedicated failure reporting)
+2026-10-30T13:35:14.1648432Z Checking GitHub API rate limit after querying jobs
+2026-10-30T13:35:14.2905594Z No failed non-builtin jobs found, skipping issue creation

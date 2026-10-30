@@ -36,3 +36,4 @@ Mettre à jour le contenu du site web "GitHub Info de Mona" en analysant les not
    - Un résumé structuré des modifications apportées.
    - La liste explicite des sources consultées.
    - Les raisons des choix d'édition.
+   5. Modifiez le fichier index.html pour ajouter une section présentant les nouvelles fonctionnalités GitHub Copilot.

@@ -1,0 +1,49 @@
+﻿2026-10-30T13:34:57.8789285Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-30T13:34:57.8790308Z with:
+2026-10-30T13:34:57.8790792Z   name: activation
+2026-10-30T13:34:57.8791324Z   include-hidden-files: true
+2026-10-30T13:34:57.8793846Z   path: /tmp/gh-aw/aw_info.json
+/tmp/gh-aw/models.json
+/tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw-prompts/system.txt
+/tmp/gh-aw/aw-prompts/user.txt
+/tmp/gh-aw/aw-prompts/prompt-template.txt
+/tmp/gh-aw/aw-prompts/prompt-import-tree.json
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/base
+/tmp/gh-aw/.github/agents
+/tmp/gh-aw/.github/skills
+/tmp/gh-aw/skill_inventory.json
+
+2026-10-30T13:34:57.8796741Z   if-no-files-found: ignore
+2026-10-30T13:34:57.8797928Z   retention-days: 1
+2026-10-30T13:34:57.8798508Z   compression-level: 6
+2026-10-30T13:34:57.8799052Z   overwrite: false
+2026-10-30T13:34:57.8799587Z   archive: true
+2026-10-30T13:34:57.8800083Z env:
+2026-10-30T13:34:57.8800569Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:34:57.8801227Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:34:57.8803322Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:34:57.8805659Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:34:57.8806569Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:34:57.8810658Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:34:57.8811337Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T13:34:57.8811943Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:34:57.8813187Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:34:57.8814039Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1583ab4ad93bb1a7
+2026-10-30T13:34:57.8814754Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367294610
+2026-10-30T13:34:57.8815385Z ##[endgroup]
+2026-10-30T13:34:58.2060197Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-30T13:34:58.2196172Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-10-30T13:34:58.2197407Z With the provided path, there will be 3 files uploaded
+2026-10-30T13:34:58.2198457Z Artifact name is valid!
+2026-10-30T13:34:58.2199022Z Root directory input is valid!
+2026-10-30T13:34:58.5013229Z Uploading artifact: activation.zip
+2026-10-30T13:34:58.5060558Z Beginning upload of artifact content to blob storage
+2026-10-30T13:34:58.7681712Z Uploaded bytes 2520
+2026-10-30T13:34:58.8062192Z Finished uploading artifact content to blob storage!
+2026-10-30T13:34:58.8069748Z SHA256 digest of uploaded artifact is 178a24b8902abdc3c2b885786d1b409695b526c3d1e095c2e13f282b628e54fe
+2026-10-30T13:34:58.8091582Z Finalizing artifact upload
+2026-10-30T13:34:59.3337099Z Artifact activation successfully finalized. Artifact ID 12980503511
+2026-10-30T13:34:59.3340347Z Artifact activation has been successfully uploaded! Final size is 2520 bytes. Artifact ID is 12980503511
+2026-10-30T13:34:59.3365013Z Artifact download URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41064379670/artifacts/12980503511

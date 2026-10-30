@@ -1,0 +1,35 @@
+﻿2026-10-30T13:34:56.1665701Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-30T13:34:56.1668118Z with:
+2026-10-30T13:34:56.1668579Z   name: info
+2026-10-30T13:34:56.1669081Z   path: /tmp/gh-aw/aw_info.json
+2026-10-30T13:34:56.1669660Z   if-no-files-found: ignore
+2026-10-30T13:34:56.1670232Z   retention-days: 0
+2026-10-30T13:34:56.1670730Z   compression-level: 6
+2026-10-30T13:34:56.1671249Z   overwrite: false
+2026-10-30T13:34:56.1671767Z   include-hidden-files: false
+2026-10-30T13:34:56.1672324Z   archive: true
+2026-10-30T13:34:56.1672786Z env:
+2026-10-30T13:34:56.1673251Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:34:56.1673864Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:34:56.1676667Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:34:56.1679423Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:34:56.1680049Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:34:56.1680739Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:34:56.1682494Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T13:34:56.1683131Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:34:56.1683778Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:34:56.1684574Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1583ab4ad93bb1a7
+2026-10-30T13:34:56.1686867Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367294610
+2026-10-30T13:34:56.1687566Z ##[endgroup]
+2026-10-30T13:34:56.6262673Z With the provided path, there will be 1 file uploaded
+2026-10-30T13:34:56.6275128Z Artifact name is valid!
+2026-10-30T13:34:56.6279476Z Root directory input is valid!
+2026-10-30T13:34:56.9155053Z Uploading artifact: info.zip
+2026-10-30T13:34:56.9703228Z Beginning upload of artifact content to blob storage
+2026-10-30T13:34:57.2927708Z Uploaded bytes 789
+2026-10-30T13:34:57.3486957Z Finished uploading artifact content to blob storage!
+2026-10-30T13:34:57.3492527Z SHA256 digest of uploaded artifact is 1dca59bf4200e7314fe98833a8390f66bf5c81824d8b072796a68db0eb0d3bdc
+2026-10-30T13:34:57.3504207Z Finalizing artifact upload
+2026-10-30T13:34:57.8558012Z Artifact info successfully finalized. Artifact ID 12981797421
+2026-10-30T13:34:57.8559406Z Artifact info has been successfully uploaded! Final size is 789 bytes. Artifact ID is 12981797421
+2026-10-30T13:34:57.8560845Z Artifact download URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41064379670/artifacts/12981797421

@@ -1,0 +1,30 @@
+﻿2026-10-30T13:34:56.0002212Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T13:34:56.0003195Z with:
+2026-10-30T13:34:56.0005446Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'skill_inventory.cjs'));
+await main();
+
+2026-10-30T13:34:56.0012310Z   github-token: ***
+2026-10-30T13:34:56.0012894Z   debug: false
+2026-10-30T13:34:56.0013393Z   user-agent: actions/github-script
+2026-10-30T13:34:56.0013986Z   result-encoding: json
+2026-10-30T13:34:56.0014869Z   retries: 0
+2026-10-30T13:34:56.0015408Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T13:34:56.0016279Z env:
+2026-10-30T13:34:56.0016750Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:34:56.0017778Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:34:56.0020250Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:34:56.0023387Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:34:56.0024028Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:34:56.0025126Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:34:56.0025942Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T13:34:56.0026550Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:34:56.0027611Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:34:56.0028406Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1583ab4ad93bb1a7
+2026-10-30T13:34:56.0029447Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367294610
+2026-10-30T13:34:56.0030101Z   GH_AW_SKILL_DIR: .github/skills
+2026-10-30T13:34:56.0030758Z ##[endgroup]
+2026-10-30T13:34:56.1361747Z Inventoried 0 skills; 0 conflict(s)

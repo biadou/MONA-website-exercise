@@ -1,0 +1,24 @@
+﻿2026-10-30T13:34:55.5113415Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-30T13:34:55.5114359Z with:
+2026-10-30T13:34:55.5114831Z   name: aic-usage-scan-v2
+2026-10-30T13:34:55.5115468Z   path: /tmp/gh-aw/agentic-workflow-usage-scan-v2.jsonl
+2026-10-30T13:34:55.5116593Z   overwrite: true
+2026-10-30T13:34:55.5117107Z   if-no-files-found: ignore
+2026-10-30T13:34:55.5117645Z   retention-days: 3
+2026-10-30T13:34:55.5118141Z   compression-level: 6
+2026-10-30T13:34:55.5118668Z   include-hidden-files: false
+2026-10-30T13:34:55.5119218Z   archive: true
+2026-10-30T13:34:55.5119686Z env:
+2026-10-30T13:34:55.5120389Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:34:55.5121026Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:34:55.5123006Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:34:55.5125349Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:34:55.5126203Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:34:55.5126880Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:34:55.5127447Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T13:34:55.5128039Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:34:55.5128671Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:34:55.5129435Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1583ab4ad93bb1a7
+2026-10-30T13:34:55.5130115Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367294610
+2026-10-30T13:34:55.5130736Z ##[endgroup]
+2026-10-30T13:34:55.8887510Z No files were found with the provided path: /tmp/gh-aw/agentic-workflow-usage-scan-v2.jsonl. No artifacts will be uploaded.

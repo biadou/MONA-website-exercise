@@ -1,0 +1,46 @@
+﻿2026-10-30T13:35:07.3824076Z ##[group]Run github/gh-aw-actions/setup@221ba4f4319de6b8e809d1a15528b3ae6a818aa5
+2026-10-30T13:35:07.3825299Z with:
+2026-10-30T13:35:07.3825827Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-10-30T13:35:07.3826460Z   job-name: conclusion
+2026-10-30T13:35:07.3827323Z   trace-id: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:35:07.3827935Z   parent-span-id: 1583ab4ad93bb1a7
+2026-10-30T13:35:07.3828506Z   safe-output-artifact-client: false
+2026-10-30T13:35:07.3829307Z env:
+2026-10-30T13:35:07.3829744Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:35:07.3830334Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:35:07.3832183Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:35:07.3834027Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:35:07.3834584Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:35:07.3835230Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:35:07.3836301Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T13:35:07.3838250Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T13:35:07.3839741Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T13:35:07.3840686Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:35:07.3841472Z   GH_AW_SETUP_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T13:35:07.3842798Z   GH_AW_CURRENT_WORKFLOW_REF: biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main
+2026-10-30T13:35:07.3844090Z   GH_AW_INFO_VERSION: 1.0.103
+2026-10-30T13:35:07.3844615Z   GH_AW_INFO_AWF_VERSION: v0.29.0
+2026-10-30T13:35:07.3845145Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-10-30T13:35:07.3845651Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-10-30T13:35:07.3846120Z ##[endgroup]
+2026-10-30T13:35:09.2708831Z Successfully copied 763 files to /home/runner/work/_temp/gh-aw/actions
+2026-10-30T13:35:09.2728365Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-10-30T13:35:09.9432814Z [info] [otlp] INPUT_TRACE_ID=aff84d56bb619df8e9b68cb22d638710 (will reuse activation trace)
+2026-10-30T13:35:09.9433959Z [info] [otlp] INPUT_PARENT_SPAN_ID=1583ab4ad93bb1a7 (will parent setup span)
+2026-10-30T13:35:09.9434891Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-10-30T13:35:09.9435755Z [info] [otlp] resolved trace-id=aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:35:09.9436681Z [info] [otlp] trace-id=aff84d56bb619df8e9b68cb22d638710 written to GITHUB_OUTPUT
+2026-10-30T13:35:09.9437996Z [info] [otlp] span-id=a4ad28d30d2d6dda written to GITHUB_OUTPUT
+2026-10-30T13:35:09.9438839Z [info] [otlp] parent-span-id=1583ab4ad93bb1a7 written to GITHUB_OUTPUT
+2026-10-30T13:35:09.9439655Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-10-30T13:35:09.9440419Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-10-30T13:35:09.9441200Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-10-30T13:35:09.9442685Z curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+2026-10-30T13:35:09.9444045Z Node v24.22.1; OpenSSL 3.5.9
+2026-10-30T13:35:09.9444674Z Go: unavailable; binary build-toolchain inspection unavailable
+2026-10-30T13:35:09.9445839Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-10-30T13:35:09.9447299Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-10-30T13:35:09.9448524Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-10-30T13:35:09.9450375Z ##[endgroup]
+2026-10-30T13:35:09.9451086Z Successfully copied 114 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-10-30T13:35:09.9452175Z Successfully copied 173 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs

@@ -1,0 +1,41 @@
+﻿2026-10-30T13:35:11.1426438Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T13:35:11.1427680Z with:
+2026-10-30T13:35:11.1431661Z   github-token: ***
+2026-10-30T13:35:11.1433720Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_detection_runs.cjs'));
+await main();
+
+2026-10-30T13:35:11.1435858Z   debug: false
+2026-10-30T13:35:11.1436297Z   user-agent: actions/github-script
+2026-10-30T13:35:11.1437047Z   result-encoding: json
+2026-10-30T13:35:11.1437518Z   retries: 0
+2026-10-30T13:35:11.1437986Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T13:35:11.1438552Z env:
+2026-10-30T13:35:11.1438971Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:35:11.1439529Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:35:11.1441713Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:35:11.1443573Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:35:11.1444128Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:35:11.1444839Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:35:11.1445903Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T13:35:11.1447758Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T13:35:11.1449367Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T13:35:11.1450302Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:35:11.1450899Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:35:11.1451581Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a4ad28d30d2d6dda
+2026-10-30T13:35:11.1452200Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367309857
+2026-10-30T13:35:11.1452749Z   GH_AW_AGENT_OUTPUT: 
+2026-10-30T13:35:11.1453464Z   GH_AW_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T13:35:11.1454787Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/biadou/MONA-website-exercise/blob/main/.github/workflows/update-mona-website.md
+2026-10-30T13:35:11.1456059Z   GH_AW_RUN_URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41064379670
+2026-10-30T13:35:11.1457031Z   GH_AW_DETECTION_CONCLUSION: 
+2026-10-30T13:35:11.1457542Z   GH_AW_DETECTION_REASON: 
+2026-10-30T13:35:11.1458005Z ##[endgroup]
+2026-10-30T13:35:11.2887423Z Detection conclusion: unknown
+2026-10-30T13:35:11.2892775Z Detection category: detection_outcome_unknown
+2026-10-30T13:35:11.2896268Z Workflow name: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T13:35:11.2900179Z Run URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41064379670
+2026-10-30T13:35:11.2904194Z Detection did not produce a warning or failure, no issue comment needed

@@ -1,0 +1,63 @@
+﻿2026-10-30T13:35:15.0314824Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-30T13:35:15.0316274Z with:
+2026-10-30T13:35:15.0317369Z   name: usage
+2026-10-30T13:35:15.0327331Z   path: /tmp/gh-aw/usage/aw_session.jsonl
+/tmp/gh-aw/usage/aw_info.json
+/tmp/gh-aw/usage/aw-info.jsonl
+/tmp/gh-aw/usage/agent_usage.json
+/tmp/gh-aw/usage/agent_usage.jsonl
+/tmp/gh-aw/usage/detection_usage.jsonl
+/tmp/gh-aw/usage/evals.jsonl
+/tmp/gh-aw/usage/graders/grader_manifest.json
+/tmp/gh-aw/usage/graders/grader_results.json
+/tmp/gh-aw/usage/github_rate_limits.jsonl
+/tmp/gh-aw/usage/agent/token_usage.jsonl
+/tmp/gh-aw/usage/agent/model-routing.jsonl
+/tmp/gh-aw/usage/agent/execution.json
+/tmp/gh-aw/usage/agent/harness_retry.json
+/tmp/gh-aw/usage/detection/token_usage.jsonl
+/tmp/gh-aw/usage/detection/execution.json
+/tmp/gh-aw/usage/detection/harness_retry.json
+/tmp/gh-aw/usage/detection/detection_result.json
+/tmp/gh-aw/usage/evals/token_usage.jsonl
+/tmp/gh-aw/usage/evals/execution.json
+/tmp/gh-aw/usage/experiment/state.jsonl
+/tmp/gh-aw/usage/experiment/state.json
+/tmp/gh-aw/usage/experiment/assignments.json
+/tmp/gh-aw/usage/activity/summary.json
+
+2026-10-30T13:35:15.0337590Z   if-no-files-found: ignore
+2026-10-30T13:35:15.0338528Z   retention-days: 0
+2026-10-30T13:35:15.0339398Z   compression-level: 6
+2026-10-30T13:35:15.0340282Z   overwrite: false
+2026-10-30T13:35:15.0341159Z   include-hidden-files: false
+2026-10-30T13:35:15.0342100Z   archive: true
+2026-10-30T13:35:15.0342942Z env:
+2026-10-30T13:35:15.0343747Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:35:15.0344805Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:35:15.0348225Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:35:15.0351469Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:35:15.0352541Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:35:15.0354722Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:35:15.0356694Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T13:35:15.0359835Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T13:35:15.0362484Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T13:35:15.0364196Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:35:15.0365306Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:35:15.0366587Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: a4ad28d30d2d6dda
+2026-10-30T13:35:15.0367926Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367309857
+2026-10-30T13:35:15.0368964Z ##[endgroup]
+2026-10-30T13:35:15.2292697Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-30T13:35:15.2335615Z The least common ancestor is /tmp/gh-aw/usage. This will be the root directory of the artifact
+2026-10-30T13:35:15.2337701Z With the provided path, there will be 6 files uploaded
+2026-10-30T13:35:15.2339509Z Artifact name is valid!
+2026-10-30T13:35:15.2340426Z Root directory input is valid!
+2026-10-30T13:35:15.4510416Z Uploading artifact: usage.zip
+2026-10-30T13:35:15.4554654Z Beginning upload of artifact content to blob storage
+2026-10-30T13:35:15.5805551Z Uploaded bytes 6112
+2026-10-30T13:35:15.6085082Z Finished uploading artifact content to blob storage!
+2026-10-30T13:35:15.6090777Z SHA256 digest of uploaded artifact is 4098621b5be4c001cc548fa247f40e69be2a07d0a9eab2a46d350dc97c8533e8
+2026-10-30T13:35:15.6094172Z Finalizing artifact upload
+2026-10-30T13:35:16.0893733Z Artifact usage successfully finalized. Artifact ID 12981502391
+2026-10-30T13:35:16.0904817Z Artifact usage has been successfully uploaded! Final size is 6112 bytes. Artifact ID is 12981502391
+2026-10-30T13:35:16.0918729Z Artifact download URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41064379670/artifacts/12981502391

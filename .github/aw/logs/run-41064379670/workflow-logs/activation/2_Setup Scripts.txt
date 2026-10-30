@@ -1,0 +1,40 @@
+﻿2026-10-30T13:34:49.8574792Z ##[group]Run github/gh-aw-actions/setup@221ba4f4319de6b8e809d1a15528b3ae6a818aa5
+2026-10-30T13:34:49.8576583Z with:
+2026-10-30T13:34:49.8577217Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-10-30T13:34:49.8577890Z   job-name: activation
+2026-10-30T13:34:49.8578398Z   safe-output-artifact-client: true
+2026-10-30T13:34:49.8579207Z env:
+2026-10-30T13:34:49.8579678Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:34:49.8581537Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:34:49.8646025Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:34:49.8649399Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:34:49.8650524Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:34:49.8652192Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:34:49.8652752Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T13:34:49.8677546Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:34:49.8678692Z   GH_AW_SETUP_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T13:34:49.8680034Z   GH_AW_CURRENT_WORKFLOW_REF: biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main
+2026-10-30T13:34:49.8681570Z   GH_AW_INFO_VERSION: 1.0.103
+2026-10-30T13:34:49.8682157Z   GH_AW_INFO_AWF_VERSION: v0.29.0
+2026-10-30T13:34:49.8682739Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-10-30T13:34:49.8683287Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-10-30T13:34:49.8683814Z ##[endgroup]
+2026-10-30T13:34:53.3869745Z Successfully copied 763 files to /home/runner/work/_temp/gh-aw/actions
+2026-10-30T13:34:53.3901097Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-10-30T13:34:53.5553868Z curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+2026-10-30T13:34:53.6087425Z Node v24.22.1; OpenSSL 3.5.9
+2026-10-30T13:34:53.6347829Z Go: unavailable; binary build-toolchain inspection unavailable
+2026-10-30T13:34:53.6349974Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-10-30T13:34:53.6351542Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-10-30T13:34:53.6352750Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-10-30T13:34:53.6354534Z ##[endgroup]
+2026-10-30T13:34:54.1705119Z Successfully copied 114 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-10-30T13:34:54.4818162Z Successfully copied 173 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-10-30T13:34:54.5951276Z [info] [otlp] INPUT_TRACE_ID not set, a new trace ID will be generated
+2026-10-30T13:34:54.5967484Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-10-30T13:34:54.6046574Z [info] [otlp] resolved trace-id=aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:34:54.6053690Z [info] [otlp] trace-id=aff84d56bb619df8e9b68cb22d638710 written to GITHUB_OUTPUT
+2026-10-30T13:34:54.6058531Z [info] [otlp] span-id=1583ab4ad93bb1a7 written to GITHUB_OUTPUT
+2026-10-30T13:34:54.6062554Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-10-30T13:34:54.6066710Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-10-30T13:34:54.6071301Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV

@@ -1,0 +1,30 @@
+﻿2026-10-30T13:34:55.0482000Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T13:34:55.0482974Z with:
+2026-10-30T13:34:55.0487223Z   github-token: ***
+2026-10-30T13:34:55.0489457Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'restore_aic_scan_cache.cjs'));
+await main();
+
+2026-10-30T13:34:55.0493222Z   debug: false
+2026-10-30T13:34:55.0493755Z   user-agent: actions/github-script
+2026-10-30T13:34:55.0494380Z   result-encoding: json
+2026-10-30T13:34:55.0494902Z   retries: 0
+2026-10-30T13:34:55.0495468Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T13:34:55.0496366Z env:
+2026-10-30T13:34:55.0496853Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:34:55.0497481Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:34:55.0499478Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:34:55.0501526Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:34:55.0502147Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:34:55.0502874Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:34:55.0503469Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T13:34:55.0504071Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:34:55.0504712Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:34:55.0505478Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1583ab4ad93bb1a7
+2026-10-30T13:34:55.0506724Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367294610
+2026-10-30T13:34:55.0507381Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-10-30T13:34:55.0507971Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-10-30T13:34:55.0508534Z ##[endgroup]

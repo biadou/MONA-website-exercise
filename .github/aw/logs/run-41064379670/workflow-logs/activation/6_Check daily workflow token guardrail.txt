@@ -1,0 +1,38 @@
+﻿2026-10-30T13:34:55.3128725Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T13:34:55.3129660Z with:
+2026-10-30T13:34:55.3134833Z   github-token: ***
+2026-10-30T13:34:55.3137488Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_daily_aic_workflow_guardrail.cjs'));
+await main();
+
+2026-10-30T13:34:55.3139907Z   debug: false
+2026-10-30T13:34:55.3140417Z   user-agent: actions/github-script
+2026-10-30T13:34:55.3141009Z   result-encoding: json
+2026-10-30T13:34:55.3143814Z   retries: 0
+2026-10-30T13:34:55.3144473Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T13:34:55.3145147Z env:
+2026-10-30T13:34:55.3147572Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T13:34:55.3148285Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T13:34:55.3150527Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41064379670,github.run_id=41064379670,gh-aw.engine.id=copilot
+2026-10-30T13:34:55.3152553Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T13:34:55.3153181Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T13:34:55.3153852Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T13:34:55.3154422Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T13:34:55.3155026Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T13:34:55.3155676Z   GITHUB_AW_OTEL_TRACE_ID: aff84d56bb619df8e9b68cb22d638710
+2026-10-30T13:34:55.3156741Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1583ab4ad93bb1a7
+2026-10-30T13:34:55.3157453Z   GITHUB_AW_OTEL_JOB_START_MS: 1793367294610
+2026-10-30T13:34:55.3158473Z   GH_AW_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T13:34:55.3159395Z   GH_AW_WORKFLOW_ID: update-mona-website
+2026-10-30T13:34:55.3160299Z   GH_AW_RUN_URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41064379670
+2026-10-30T13:34:55.3161192Z   GH_AW_WORKFLOW_DISPATCH_AW_CONTEXT: 
+2026-10-30T13:34:55.3161792Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-10-30T13:34:55.3162368Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-10-30T13:34:55.3166491Z   GH_AW_GITHUB_TOKEN: ***
+2026-10-30T13:34:55.3167072Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-10-30T13:34:55.3167617Z ##[endgroup]
+2026-10-30T13:34:55.4837729Z [daily-workflow-aic] Resolved daily AIC guardrail limits: {"dailyAICThreshold":5000,"perRunMaxAICredits":1000,"perRunFallbackAvailable":true}
+2026-10-30T13:34:55.4846251Z Skipping daily workflow AI Credits guardrail for manual or command-driven runs.
