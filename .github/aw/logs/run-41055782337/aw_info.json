@@ -1,0 +1,51 @@
+{
+  "engine_id": "copilot",
+  "engine_name": "GitHub Copilot CLI",
+  "model": "auto",
+  "version": "1.0.103",
+  "agent_version": "1.0.103",
+  "workflow_name": "Flux de travail : Mise à jour automatique du site GitHub Info de Mona",
+  "workflow_id": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+  "workflow_call_id": "41055782337-1:biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+  "caller_workflow_ref": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 41055782337,
+  "run_number": 1,
+  "run_attempt": "1",
+  "repository": "biadou/MONA-website-exercise",
+  "ref": "refs/heads/main",
+  "sha": "9952899570b9b4066a41231a4c7e0f816481fabc",
+  "actor": "biadou",
+  "event_name": "workflow_dispatch",
+  "target_repo": "",
+  "staged": false,
+  "dry_run": false,
+  "allowed_domains": [
+    "defaults"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.29.0",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-10-30T12:30:06.782Z",
+  "cli_version": "v1.0.1",
+  "engine_harness": "copilot-cli",
+  "workflow_ref": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+  "server_url": "https://github.com",
+  "model_config": {
+    "routing": {
+      "enabled": false
+    },
+    "models": {
+      "allowed": [],
+      "blocked": []
+    },
+    "max_ai_credits_source": "default",
+    "max_ai_credits": 1000
+  }
+}

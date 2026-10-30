@@ -1,0 +1,28 @@
+﻿2026-10-30T12:30:33.0130838Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-10-30T12:30:33.0131812Z with:
+2026-10-30T12:30:33.0132295Z   pattern: safe-outputs-items
+2026-10-30T12:30:33.0132860Z   merge-multiple: true
+2026-10-30T12:30:33.0133365Z   path: /tmp/gh-aw/
+2026-10-30T12:30:33.0134224Z   repository: biadou/MONA-website-exercise
+2026-10-30T12:30:33.0134859Z   run-id: 41055782337
+2026-10-30T12:30:33.0135368Z   skip-decompress: false
+2026-10-30T12:30:33.0135909Z   digest-mismatch: error
+2026-10-30T12:30:33.0136421Z env:
+2026-10-30T12:30:33.0136883Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:33.0137512Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:33.0139607Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:33.0141965Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:33.0142630Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:33.0143310Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:33.0144771Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T12:30:33.0150711Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T12:30:33.0155854Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T12:30:33.0157014Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:33.0157669Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:33.0158462Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 232fd6711a796d32
+2026-10-30T12:30:33.0159143Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363431391
+2026-10-30T12:30:33.0159752Z ##[endgroup]
+2026-10-30T12:30:33.4986928Z Found 2 artifact(s)
+2026-10-30T12:30:33.4991158Z Filtering artifacts by pattern 'safe-outputs-items'
+2026-10-30T12:30:33.5015443Z Total of 0 artifact(s) downloaded
+2026-10-30T12:30:33.5025818Z Download artifact has finished successfully

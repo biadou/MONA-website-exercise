@@ -1,0 +1,23 @@
+﻿2026-10-30T12:30:32.3271399Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-10-30T12:30:32.3272212Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-10-30T12:30:32.3272902Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-10-30T12:30:32.3274013Z [36;1mif [ -f "/tmp/gh-aw/agent_output.json" ]; then[0m
+2026-10-30T12:30:32.3274997Z [36;1m  echo "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-10-30T12:30:32.3275855Z [36;1mfi[0m
+2026-10-30T12:30:32.3286973Z shell: /usr/bin/bash -e {0}
+2026-10-30T12:30:32.3287617Z env:
+2026-10-30T12:30:32.3288097Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:32.3288737Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:32.3296299Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:32.3298497Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:32.3299207Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:32.3299884Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:32.3301096Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T12:30:32.3302983Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T12:30:32.3304939Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T12:30:32.3306132Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:32.3306794Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:32.3307579Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 232fd6711a796d32
+2026-10-30T12:30:32.3308279Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363431391
+2026-10-30T12:30:32.3309857Z ##[endgroup]
+2026-10-30T12:30:32.4235576Z /tmp/gh-aw/otel.jsonl

@@ -1,0 +1,453 @@
+﻿2026-10-30T12:30:01.8376654Z Current runner version: '2.338.1'
+2026-10-30T12:30:01.8401835Z ##[group]Runner Image Provisioner
+2026-10-30T12:30:01.8402661Z Hosted Compute Agent
+2026-10-30T12:30:01.8403285Z Version: 20261021.618
+2026-10-30T12:30:01.8403886Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-30T12:30:01.8404563Z Build Date: 2026-10-21T00:45:21Z
+2026-10-30T12:30:01.8405266Z Worker ID: {634cab26-b2a1-47b9-a1c8-9955534726f4}
+2026-10-30T12:30:01.8405929Z Region: centralus
+2026-10-30T12:30:01.8406530Z Cloud: Azure
+2026-10-30T12:30:01.8407040Z ##[endgroup]
+2026-10-30T12:30:01.8408442Z ##[group]VM Image
+2026-10-30T12:30:01.8409099Z - OS: Linux (x64)
+2026-10-30T12:30:01.8409648Z - Source: Docker
+2026-10-30T12:30:01.8410196Z - Name: ubuntu:24.04
+2026-10-30T12:30:01.8413463Z - Version: 20261026.36.1
+2026-10-30T12:30:01.8414049Z ##[endgroup]
+2026-10-30T12:30:01.8415330Z ##[group]GITHUB_TOKEN Permissions
+2026-10-30T12:30:01.8417387Z Actions: read
+2026-10-30T12:30:01.8418049Z Contents: read
+2026-10-30T12:30:01.8418749Z Issues: write
+2026-10-30T12:30:01.8419375Z Metadata: read
+2026-10-30T12:30:01.8419894Z ##[endgroup]
+2026-10-30T12:30:01.8422332Z Secret source: Actions
+2026-10-30T12:30:01.8423262Z Cache mode: write
+2026-10-30T12:30:01.8423996Z Prepare workflow directory
+2026-10-30T12:30:01.9039323Z Prepare all required actions
+2026-10-30T12:30:01.9087883Z Getting action download info
+2026-10-30T12:30:02.3456219Z Download action repository 'github/gh-aw-actions@221ba4f4319de6b8e809d1a15528b3ae6a818aa5' (SHA:221ba4f4319de6b8e809d1a15528b3ae6a818aa5)
+2026-10-30T12:30:03.1953002Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-10-30T12:30:03.4804194Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-10-30T12:30:03.5599871Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-30T12:30:03.8078944Z Complete job name: activation
+2026-10-30T12:30:03.8830920Z ##[group]Run github/gh-aw-actions/setup@221ba4f4319de6b8e809d1a15528b3ae6a818aa5
+2026-10-30T12:30:03.8832108Z with:
+2026-10-30T12:30:03.8832606Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-10-30T12:30:03.8833213Z   job-name: activation
+2026-10-30T12:30:03.8833696Z   safe-output-artifact-client: true
+2026-10-30T12:30:03.8834398Z env:
+2026-10-30T12:30:03.8834814Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:03.8835369Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:03.8837169Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:03.8838923Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:03.8839462Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:03.8840068Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:03.8840934Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:03.8841445Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:03.8842200Z   GH_AW_SETUP_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T12:30:03.8843496Z   GH_AW_CURRENT_WORKFLOW_REF: biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main
+2026-10-30T12:30:03.8844505Z   GH_AW_INFO_VERSION: 1.0.103
+2026-10-30T12:30:03.8844994Z   GH_AW_INFO_AWF_VERSION: v0.29.0
+2026-10-30T12:30:03.8845492Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-10-30T12:30:03.8845982Z   GH_AW_SETUP_AW_CONTEXT: 
+2026-10-30T12:30:03.8846445Z ##[endgroup]
+2026-10-30T12:30:05.8911519Z Successfully copied 763 files to /home/runner/work/_temp/gh-aw/actions
+2026-10-30T12:30:05.8936903Z ##[group]Runtime TLS inventory (not a trust-store attestation)
+2026-10-30T12:30:05.9673257Z curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+2026-10-30T12:30:05.9950573Z Node v24.22.1; OpenSSL 3.5.9
+2026-10-30T12:30:05.9994941Z Go: unavailable; binary build-toolchain inspection unavailable
+2026-10-30T12:30:05.9996575Z Python/certifi: not inspected by shell setup; record each client's interpreter, TLS backend and selected CA bundle separately.
+2026-10-30T12:30:06.0024253Z Container, proxy and MCP trust stores require separate image/vendor evidence.
+2026-10-30T12:30:06.0025264Z Browser updates and successful HTTPS connections do not attest CA distrust.
+2026-10-30T12:30:06.0026811Z ##[endgroup]
+2026-10-30T12:30:06.2932443Z Successfully copied 114 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-10-30T12:30:06.4622370Z Successfully copied 173 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-10-30T12:30:06.5372139Z [info] [otlp] INPUT_TRACE_ID not set, a new trace ID will be generated
+2026-10-30T12:30:06.5381709Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-10-30T12:30:06.5419940Z [info] [otlp] resolved trace-id=ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:06.5431940Z [info] [otlp] trace-id=ad5fa475061c00fa2923eb87c4a01abf written to GITHUB_OUTPUT
+2026-10-30T12:30:06.5438884Z [info] [otlp] span-id=795c7d92547daeb3 written to GITHUB_OUTPUT
+2026-10-30T12:30:06.5443498Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-10-30T12:30:06.5451756Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-10-30T12:30:06.5454401Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-10-30T12:30:06.5936782Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/mask_otlp_headers.sh"
+2026-10-30T12:30:06.5937714Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/mask_otlp_headers.sh"[0m
+2026-10-30T12:30:06.5945881Z shell: /usr/bin/bash -e {0}
+2026-10-30T12:30:06.5946395Z env:
+2026-10-30T12:30:06.5946802Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:06.5947978Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:06.5949832Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:06.5951938Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:06.5952493Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:06.5953079Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:06.5953582Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:06.5954136Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:06.5954707Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:06.5955380Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:06.5955977Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:06.5956513Z ##[endgroup]
+2026-10-30T12:30:06.6138294Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T12:30:06.6139068Z with:
+2026-10-30T12:30:06.6141394Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'generate_aw_info.cjs'));
+await main(core, context);
+
+2026-10-30T12:30:06.6146629Z   github-token: ***
+2026-10-30T12:30:06.6147069Z   debug: false
+2026-10-30T12:30:06.6147508Z   user-agent: actions/github-script
+2026-10-30T12:30:06.6148039Z   result-encoding: json
+2026-10-30T12:30:06.6148486Z   retries: 0
+2026-10-30T12:30:06.6149183Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T12:30:06.6149775Z env:
+2026-10-30T12:30:06.6150202Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:06.6150971Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:06.6153169Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:06.6154973Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:06.6155517Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:06.6156100Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:06.6156593Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:06.6157098Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:06.6157664Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:06.6158336Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:06.6158935Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:06.6159488Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-10-30T12:30:06.6160007Z   GH_AW_INFO_ENGINE_NAME: GitHub Copilot CLI
+2026-10-30T12:30:06.6160793Z   GH_AW_INFO_MODEL: auto
+2026-10-30T12:30:06.6161264Z   GH_AW_INFO_VERSION: 1.0.103
+2026-10-30T12:30:06.6162253Z   GH_AW_INFO_AGENT_VERSION: 1.0.103
+2026-10-30T12:30:06.6162812Z   GH_AW_INFO_CLI_VERSION: v1.0.1
+2026-10-30T12:30:06.6163609Z   GH_AW_INFO_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T12:30:06.6164888Z   GH_AW_INFO_WORKFLOW_ID: biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main
+2026-10-30T12:30:06.6165869Z   GH_AW_INFO_EXPERIMENTAL: false
+2026-10-30T12:30:06.6166404Z   GH_AW_INFO_SUPPORTS_TOOLS_ALLOWLIST: true
+2026-10-30T12:30:06.6166955Z   GH_AW_INFO_STAGED: false
+2026-10-30T12:30:06.6167449Z   GH_AW_INFO_ALLOWED_DOMAINS: ["defaults"]
+2026-10-30T12:30:06.6168002Z   GH_AW_INFO_FIREWALL_ENABLED: true
+2026-10-30T12:30:06.6168519Z   GH_AW_INFO_AWF_VERSION: v0.29.0
+2026-10-30T12:30:06.6169022Z   GH_AW_INFO_AWMG_VERSION: 
+2026-10-30T12:30:06.6169508Z   GH_AW_INFO_FIREWALL_TYPE: squid
+2026-10-30T12:30:06.6170016Z   GH_AW_INFO_AGENT_RUNTIME: 
+2026-10-30T12:30:06.6170710Z   GH_AW_INFO_ENGINE_HARNESS: copilot-cli
+2026-10-30T12:30:06.6171662Z   GH_AW_INFO_MODEL_CONFIG: {"routing":{"enabled":false},"models":{"allowed":[],"blocked":[]},"max_ai_credits_source":"default"}
+2026-10-30T12:30:06.6172610Z   GH_AW_INFO_MAX_AI_CREDITS: 1000
+2026-10-30T12:30:06.6173117Z   GH_AW_COMPILED_STRICT: true
+2026-10-30T12:30:06.6173586Z ##[endgroup]
+2026-10-30T12:30:06.7786855Z Starting context variable validation...
+2026-10-30T12:30:06.7795689Z ✓ github.event.repository.id is valid: 1439649501
+2026-10-30T12:30:06.7800124Z ✓ github.event.sender.id is valid: 169366090
+2026-10-30T12:30:06.7803548Z Validated 2 context variables
+2026-10-30T12:30:06.7806716Z ✅ All context variables validated successfully
+2026-10-30T12:30:06.7811291Z Lockdown mode not explicitly enabled, skipping validation
+2026-10-30T12:30:06.7814400Z Repository visibility: unknown
+2026-10-30T12:30:06.7817119Z Compiled with strict mode: true
+2026-10-30T12:30:06.7987969Z Generated merged models.json at: /tmp/gh-aw/models.json
+2026-10-30T12:30:06.7994151Z Generated aw_info.json at: /tmp/gh-aw/aw_info.json
+2026-10-30T12:30:06.7997344Z {
+2026-10-30T12:30:06.7997886Z   "engine_id": "copilot",
+2026-10-30T12:30:06.7998521Z   "engine_name": "GitHub Copilot CLI",
+2026-10-30T12:30:06.8035828Z   "model": "auto",
+2026-10-30T12:30:06.8036320Z   "version": "1.0.103",
+2026-10-30T12:30:06.8036791Z   "agent_version": "1.0.103",
+2026-10-30T12:30:06.8037701Z   "workflow_name": "Flux de travail : Mise à jour automatique du site GitHub Info de Mona",
+2026-10-30T12:30:06.8038909Z   "workflow_id": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8040658Z   "workflow_call_id": "41055782337-1:biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8042156Z   "caller_workflow_ref": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8043143Z   "experimental": false,
+2026-10-30T12:30:06.8043845Z   "supports_tools_allowlist": true,
+2026-10-30T12:30:06.8044362Z   "cache_memory": false,
+2026-10-30T12:30:06.8044818Z   "run_id": 41055782337,
+2026-10-30T12:30:06.8045257Z   "run_number": 1,
+2026-10-30T12:30:06.8045686Z   "run_attempt": "1",
+2026-10-30T12:30:06.8046178Z   "repository": "biadou/MONA-website-exercise",
+2026-10-30T12:30:06.8046752Z   "ref": "refs/heads/main",
+2026-10-30T12:30:06.8047255Z   "sha": "9952899570b9b4066a41231a4c7e0f816481fabc",
+2026-10-30T12:30:06.8047806Z   "actor": "biadou",
+2026-10-30T12:30:06.8048252Z   "event_name": "workflow_dispatch",
+2026-10-30T12:30:06.8048768Z   "target_repo": "",
+2026-10-30T12:30:06.8049198Z   "staged": false,
+2026-10-30T12:30:06.8049608Z   "dry_run": false,
+2026-10-30T12:30:06.8050028Z   "allowed_domains": [
+2026-10-30T12:30:06.8050677Z     "defaults"
+2026-10-30T12:30:06.8051071Z   ],
+2026-10-30T12:30:06.8051469Z   "firewall_enabled": true,
+2026-10-30T12:30:06.8051946Z   "awf_version": "v0.29.0",
+2026-10-30T12:30:06.8052409Z   "awmg_version": "",
+2026-10-30T12:30:06.8052838Z   "agent_runtime": "",
+2026-10-30T12:30:06.8053262Z   "steps": {
+2026-10-30T12:30:06.8053659Z     "firewall": "squid"
+2026-10-30T12:30:06.8054079Z   },
+2026-10-30T12:30:06.8054484Z   "created_at": "2026-10-30T12:30:06.782Z",
+2026-10-30T12:30:06.8055022Z   "cli_version": "v1.0.1",
+2026-10-30T12:30:06.8055509Z   "engine_harness": "copilot-cli",
+2026-10-30T12:30:06.8056438Z   "workflow_ref": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8057405Z   "server_url": "https://github.com",
+2026-10-30T12:30:06.8057929Z   "model_config": {
+2026-10-30T12:30:06.8058345Z     "routing": {
+2026-10-30T12:30:06.8058797Z       "enabled": false
+2026-10-30T12:30:06.8059222Z     },
+2026-10-30T12:30:06.8059594Z     "models": {
+2026-10-30T12:30:06.8059998Z       "allowed": [],
+2026-10-30T12:30:06.8061266Z       "blocked": []
+2026-10-30T12:30:06.8061693Z     },
+2026-10-30T12:30:06.8062107Z     "max_ai_credits_source": "default",
+2026-10-30T12:30:06.8062646Z     "max_ai_credits": 1000
+2026-10-30T12:30:06.8063095Z   }
+2026-10-30T12:30:06.8063464Z }
+2026-10-30T12:30:06.8091542Z Generated workflow overview in step summary
+2026-10-30T12:30:06.8259150Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T12:30:06.8259927Z with:
+2026-10-30T12:30:06.8263860Z   github-token: ***
+2026-10-30T12:30:06.8265907Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'restore_aic_scan_cache.cjs'));
+await main();
+
+2026-10-30T12:30:06.8267986Z   debug: false
+2026-10-30T12:30:06.8268422Z   user-agent: actions/github-script
+2026-10-30T12:30:06.8268943Z   result-encoding: json
+2026-10-30T12:30:06.8269388Z   retries: 0
+2026-10-30T12:30:06.8269847Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T12:30:06.8270639Z env:
+2026-10-30T12:30:06.8271058Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:06.8271612Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:06.8273449Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:06.8275226Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:06.8275763Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:06.8276340Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:06.8276838Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:06.8277340Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:06.8277906Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:06.8278578Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:06.8279375Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:06.8279929Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-10-30T12:30:06.8280615Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-10-30T12:30:06.8281097Z ##[endgroup]
+2026-10-30T12:30:07.0093157Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T12:30:07.0093930Z with:
+2026-10-30T12:30:07.0097469Z   github-token: ***
+2026-10-30T12:30:07.0099556Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_daily_aic_workflow_guardrail.cjs'));
+await main();
+
+2026-10-30T12:30:07.0102011Z   debug: false
+2026-10-30T12:30:07.0102457Z   user-agent: actions/github-script
+2026-10-30T12:30:07.0102982Z   result-encoding: json
+2026-10-30T12:30:07.0103415Z   retries: 0
+2026-10-30T12:30:07.0103884Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T12:30:07.0104490Z env:
+2026-10-30T12:30:07.0104892Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:07.0105464Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:07.0107584Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:07.0109363Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:07.0109900Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:07.0110706Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:07.0111215Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:07.0111719Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:07.0112278Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:07.0112947Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:07.0113570Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:07.0114374Z   GH_AW_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T12:30:07.0115210Z   GH_AW_WORKFLOW_ID: update-mona-website
+2026-10-30T12:30:07.0116003Z   GH_AW_RUN_URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41055782337
+2026-10-30T12:30:07.0116806Z   GH_AW_WORKFLOW_DISPATCH_AW_CONTEXT: 
+2026-10-30T12:30:07.0117351Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-10-30T12:30:07.0117850Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-10-30T12:30:07.0121627Z   GH_AW_GITHUB_TOKEN: ***
+2026-10-30T12:30:07.0122113Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-10-30T12:30:07.0122578Z ##[endgroup]
+2026-10-30T12:30:07.1473609Z [daily-workflow-aic] Resolved daily AIC guardrail limits: {"dailyAICThreshold":5000,"perRunMaxAICredits":1000,"perRunFallbackAvailable":true}
+2026-10-30T12:30:07.1481598Z Skipping daily workflow AI Credits guardrail for manual or command-driven runs.
+2026-10-30T12:30:07.1621683Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-30T12:30:07.1622494Z with:
+2026-10-30T12:30:07.1622894Z   name: aic-usage-scan-v2
+2026-10-30T12:30:07.1623463Z   path: /tmp/gh-aw/agentic-workflow-usage-scan-v2.jsonl
+2026-10-30T12:30:07.1624070Z   overwrite: true
+2026-10-30T12:30:07.1624500Z   if-no-files-found: ignore
+2026-10-30T12:30:07.1624972Z   retention-days: 3
+2026-10-30T12:30:07.1625396Z   compression-level: 6
+2026-10-30T12:30:07.1625851Z   include-hidden-files: false
+2026-10-30T12:30:07.1626326Z   archive: true
+2026-10-30T12:30:07.1626722Z env:
+2026-10-30T12:30:07.1627116Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:07.1627657Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:07.1629522Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:07.1631806Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:07.1632352Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:07.1632935Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:07.1633433Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:07.1633935Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:07.1634492Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:07.1635175Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:07.1635770Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:07.1636304Z ##[endgroup]
+2026-10-30T12:30:07.3481801Z No files were found with the provided path: /tmp/gh-aw/agentic-workflow-usage-scan-v2.jsonl. No artifacts will be uploaded.
+2026-10-30T12:30:07.3574779Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/validate_multi_secret.sh" COPILOT_GITHUB_TOKEN 'GitHub Copilot CLI' https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+2026-10-30T12:30:07.3577012Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/validate_multi_secret.sh" COPILOT_GITHUB_TOKEN 'GitHub Copilot CLI' https://github.github.com/gh-aw/reference/engines/#github-copilot-default[0m
+2026-10-30T12:30:07.3584113Z shell: /usr/bin/bash -e {0}
+2026-10-30T12:30:07.3584668Z env:
+2026-10-30T12:30:07.3585086Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:07.3585643Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:07.3587472Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:07.3589263Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:07.3589799Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:07.3590649Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:07.3591151Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:07.3591649Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:07.3592213Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:07.3592883Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:07.3593497Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:07.3594037Z   COPILOT_GITHUB_TOKEN: 
+2026-10-30T12:30:07.3594477Z ##[endgroup]
+2026-10-30T12:30:07.3643754Z Error: None of the following secrets are set: COPILOT_GITHUB_TOKEN
+2026-10-30T12:30:07.3651276Z COPILOT_GITHUB_TOKEN is required by GitHub Copilot CLI.
+2026-10-30T12:30:07.3651966Z 
+2026-10-30T12:30:07.3652607Z Common causes if the secret appears to be configured:
+2026-10-30T12:30:07.3653417Z   - Organization secrets must have repository access granted
+2026-10-30T12:30:07.3654319Z   - Environment secrets require the job to specify that environment
+2026-10-30T12:30:07.3655170Z   - Secret names are case-sensitive - verify exact spelling
+2026-10-30T12:30:07.3655662Z 
+2026-10-30T12:30:07.3656199Z Documentation: https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+2026-10-30T12:30:07.3678300Z ##[error]Process completed with exit code 1.
+2026-10-30T12:30:07.3981980Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T12:30:07.3982741Z with:
+2026-10-30T12:30:07.3984671Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'skill_inventory.cjs'));
+await main();
+
+2026-10-30T12:30:07.3989813Z   github-token: ***
+2026-10-30T12:30:07.3990491Z   debug: false
+2026-10-30T12:30:07.3990936Z   user-agent: actions/github-script
+2026-10-30T12:30:07.3991451Z   result-encoding: json
+2026-10-30T12:30:07.3991883Z   retries: 0
+2026-10-30T12:30:07.3992328Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T12:30:07.3992887Z env:
+2026-10-30T12:30:07.3993293Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:07.3994028Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:07.3995876Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:07.3997650Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:07.3998186Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:07.3998880Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:07.3999379Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:07.3999879Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:07.4000644Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:07.4001322Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:07.4001915Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:07.4002465Z   GH_AW_SKILL_DIR: .github/skills
+2026-10-30T12:30:07.4002962Z ##[endgroup]
+2026-10-30T12:30:07.5337977Z Inventoried 0 skills; 0 conflict(s)
+2026-10-30T12:30:07.5419386Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-30T12:30:07.5420205Z with:
+2026-10-30T12:30:07.5420945Z   name: info
+2026-10-30T12:30:07.5421378Z   path: /tmp/gh-aw/aw_info.json
+2026-10-30T12:30:07.5421874Z   if-no-files-found: ignore
+2026-10-30T12:30:07.5422340Z   retention-days: 0
+2026-10-30T12:30:07.5422768Z   compression-level: 6
+2026-10-30T12:30:07.5423200Z   overwrite: false
+2026-10-30T12:30:07.5423627Z   include-hidden-files: false
+2026-10-30T12:30:07.5424101Z   archive: true
+2026-10-30T12:30:07.5424488Z env:
+2026-10-30T12:30:07.5424886Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:07.5425434Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:07.5427287Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:07.5429059Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:07.5429586Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:07.5430158Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:07.5430849Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:07.5431353Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:07.5431911Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:07.5432578Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:07.5433185Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:07.5433711Z ##[endgroup]
+2026-10-30T12:30:08.5454015Z With the provided path, there will be 1 file uploaded
+2026-10-30T12:30:08.5454941Z Artifact name is valid!
+2026-10-30T12:30:08.5455410Z Root directory input is valid!
+2026-10-30T12:30:08.5462939Z Uploading artifact: info.zip
+2026-10-30T12:30:08.5463808Z Beginning upload of artifact content to blob storage
+2026-10-30T12:30:08.5464969Z Uploaded bytes 789
+2026-10-30T12:30:08.5465496Z Finished uploading artifact content to blob storage!
+2026-10-30T12:30:08.5466477Z SHA256 digest of uploaded artifact is 43ded00c4bd1ad684da43fd0bae6315876d309c3c264e4de4b94290fadd7cad2
+2026-10-30T12:30:08.5467403Z Finalizing artifact upload
+2026-10-30T12:30:08.8792647Z Artifact info successfully finalized. Artifact ID 12977015463
+2026-10-30T12:30:08.8793684Z Artifact info has been successfully uploaded! Final size is 789 bytes. Artifact ID is 12977015463
+2026-10-30T12:30:08.8795001Z Artifact download URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41055782337/artifacts/12977015463
+2026-10-30T12:30:08.8916933Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-30T12:30:08.8917743Z with:
+2026-10-30T12:30:08.8918145Z   name: activation
+2026-10-30T12:30:08.8918599Z   include-hidden-files: true
+2026-10-30T12:30:08.8921290Z   path: /tmp/gh-aw/aw_info.json
+/tmp/gh-aw/models.json
+/tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw-prompts/system.txt
+/tmp/gh-aw/aw-prompts/user.txt
+/tmp/gh-aw/aw-prompts/prompt-template.txt
+/tmp/gh-aw/aw-prompts/prompt-import-tree.json
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/base
+/tmp/gh-aw/.github/agents
+/tmp/gh-aw/.github/skills
+/tmp/gh-aw/skill_inventory.json
+
+2026-10-30T12:30:08.8923824Z   if-no-files-found: ignore
+2026-10-30T12:30:08.8924313Z   retention-days: 1
+2026-10-30T12:30:08.8924753Z   compression-level: 6
+2026-10-30T12:30:08.8925209Z   overwrite: false
+2026-10-30T12:30:08.8925634Z   archive: true
+2026-10-30T12:30:08.8926046Z env:
+2026-10-30T12:30:08.8926456Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:08.8927043Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:08.8929217Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:08.8931241Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:08.8931805Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:08.8932394Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:08.8932894Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:08.8933404Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:08.8934026Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:08.8934708Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:08.8935315Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:08.8935856Z ##[endgroup]
+2026-10-30T12:30:09.0667182Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-30T12:30:09.0796023Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-10-30T12:30:09.0797688Z With the provided path, there will be 3 files uploaded
+2026-10-30T12:30:09.0807605Z Artifact name is valid!
+2026-10-30T12:30:09.0811853Z Root directory input is valid!
+2026-10-30T12:30:09.3551580Z Uploading artifact: activation.zip
+2026-10-30T12:30:09.3594370Z Beginning upload of artifact content to blob storage
+2026-10-30T12:30:09.5784636Z Uploaded bytes 2520
+2026-10-30T12:30:09.6260117Z Finished uploading artifact content to blob storage!
+2026-10-30T12:30:09.6265606Z SHA256 digest of uploaded artifact is 7e611ff4a8f4b04a23e87471965187d5afa52da7e38286630ddb84a742e8f3b9
+2026-10-30T12:30:09.6269353Z Finalizing artifact upload
+2026-10-30T12:30:10.1801856Z Artifact activation successfully finalized. Artifact ID 12977190189
+2026-10-30T12:30:10.1803016Z Artifact activation has been successfully uploaded! Final size is 2520 bytes. Artifact ID is 12977190189
+2026-10-30T12:30:10.1804378Z Artifact download URL: https://github.com/biadou/MONA-website-exercise/actions/runs/41055782337/artifacts/12977190189
+2026-10-30T12:30:10.1957859Z Post job cleanup.
+2026-10-30T12:30:10.2648339Z [info] [otlp] sending conclusion span "gh-aw.activation.conclusion" to configured endpoints
+2026-10-30T12:30:10.2709445Z [info] [otlp] conclusion span export attempted
+2026-10-30T12:30:10.2714646Z Cleaning up /tmp/gh-aw...
+2026-10-30T12:30:10.2901658Z Cleaned up /tmp/gh-aw
+2026-10-30T12:30:10.3027288Z No /tmp/awf-*-chroot-home directories found
+2026-10-30T12:30:10.3119811Z No /tmp/awf-chroot-* directories found
+2026-10-30T12:30:10.3236642Z Evaluate and set job outputs
+2026-10-30T12:30:10.3248917Z Set output 'aw_context'
+2026-10-30T12:30:10.3251422Z Set output 'daily_ai_credits_exceeded'
+2026-10-30T12:30:10.3252584Z Set output 'daily_ai_credits_guardrail_status'
+2026-10-30T12:30:10.3253365Z Set output 'engine_id'
+2026-10-30T12:30:10.3254035Z Set output 'lockdown_check_failed'
+2026-10-30T12:30:10.3254727Z Set output 'model'
+2026-10-30T12:30:10.3255361Z Set output 'oauth_token_check_failed'
+2026-10-30T12:30:10.3256165Z Set output 'secret_verification_result'
+2026-10-30T12:30:10.3256925Z Set output 'setup-parent-span-id'
+2026-10-30T12:30:10.3257645Z Set output 'setup-span-id'
+2026-10-30T12:30:10.3258583Z Set output 'setup-trace-id'
+2026-10-30T12:30:10.3259277Z Set output 'stale_lock_file_failed'
+2026-10-30T12:30:10.3260806Z Cleaning up orphan processes

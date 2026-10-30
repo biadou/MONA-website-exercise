@@ -1,0 +1,28 @@
+﻿2026-10-30T12:30:31.5773495Z ##[group]Run actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+2026-10-30T12:30:31.5775021Z with:
+2026-10-30T12:30:31.5776081Z   pattern: {agent,agent-output-fallback}
+2026-10-30T12:30:31.5776805Z   merge-multiple: true
+2026-10-30T12:30:31.5777378Z   path: /tmp/gh-aw/
+2026-10-30T12:30:31.5777995Z   repository: biadou/MONA-website-exercise
+2026-10-30T12:30:31.5778703Z   run-id: 41055782337
+2026-10-30T12:30:31.5779363Z   skip-decompress: false
+2026-10-30T12:30:31.5781052Z   digest-mismatch: error
+2026-10-30T12:30:31.5781678Z env:
+2026-10-30T12:30:31.5782184Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:31.5782880Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:31.5785693Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:31.5788204Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:31.5788864Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:31.5789546Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:31.5790751Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T12:30:31.5792620Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T12:30:31.5794684Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T12:30:31.5795702Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:31.5796344Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:31.5797101Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 232fd6711a796d32
+2026-10-30T12:30:31.5797780Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363431391
+2026-10-30T12:30:31.5798378Z ##[endgroup]
+2026-10-30T12:30:32.2977849Z Found 2 artifact(s)
+2026-10-30T12:30:32.2991203Z Filtering artifacts by pattern '{agent,agent-output-fallback}'
+2026-10-30T12:30:32.3074550Z Total of 0 artifact(s) downloaded
+2026-10-30T12:30:32.3088862Z Download artifact has finished successfully

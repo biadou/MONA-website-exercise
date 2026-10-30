@@ -1,0 +1,111 @@
+﻿2026-10-30T12:30:06.6138276Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-10-30T12:30:06.6139064Z with:
+2026-10-30T12:30:06.6141370Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'generate_aw_info.cjs'));
+await main(core, context);
+
+2026-10-30T12:30:06.6146625Z   github-token: ***
+2026-10-30T12:30:06.6147066Z   debug: false
+2026-10-30T12:30:06.6147505Z   user-agent: actions/github-script
+2026-10-30T12:30:06.6148036Z   result-encoding: json
+2026-10-30T12:30:06.6148483Z   retries: 0
+2026-10-30T12:30:06.6149175Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-10-30T12:30:06.6149772Z env:
+2026-10-30T12:30:06.6150199Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:06.6150965Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:06.6153130Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:06.6154969Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:06.6155513Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:06.6156097Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:06.6156590Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-10-30T12:30:06.6157095Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:06.6157654Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:06.6158333Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 795c7d92547daeb3
+2026-10-30T12:30:06.6158932Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363406545
+2026-10-30T12:30:06.6159485Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-10-30T12:30:06.6160005Z   GH_AW_INFO_ENGINE_NAME: GitHub Copilot CLI
+2026-10-30T12:30:06.6160782Z   GH_AW_INFO_MODEL: auto
+2026-10-30T12:30:06.6161261Z   GH_AW_INFO_VERSION: 1.0.103
+2026-10-30T12:30:06.6162243Z   GH_AW_INFO_AGENT_VERSION: 1.0.103
+2026-10-30T12:30:06.6162809Z   GH_AW_INFO_CLI_VERSION: v1.0.1
+2026-10-30T12:30:06.6163605Z   GH_AW_INFO_WORKFLOW_NAME: Flux de travail : Mise à jour automatique du site GitHub Info de Mona
+2026-10-30T12:30:06.6164884Z   GH_AW_INFO_WORKFLOW_ID: biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main
+2026-10-30T12:30:06.6165866Z   GH_AW_INFO_EXPERIMENTAL: false
+2026-10-30T12:30:06.6166401Z   GH_AW_INFO_SUPPORTS_TOOLS_ALLOWLIST: true
+2026-10-30T12:30:06.6166952Z   GH_AW_INFO_STAGED: false
+2026-10-30T12:30:06.6167447Z   GH_AW_INFO_ALLOWED_DOMAINS: ["defaults"]
+2026-10-30T12:30:06.6167999Z   GH_AW_INFO_FIREWALL_ENABLED: true
+2026-10-30T12:30:06.6168516Z   GH_AW_INFO_AWF_VERSION: v0.29.0
+2026-10-30T12:30:06.6169019Z   GH_AW_INFO_AWMG_VERSION: 
+2026-10-30T12:30:06.6169499Z   GH_AW_INFO_FIREWALL_TYPE: squid
+2026-10-30T12:30:06.6170004Z   GH_AW_INFO_AGENT_RUNTIME: 
+2026-10-30T12:30:06.6170705Z   GH_AW_INFO_ENGINE_HARNESS: copilot-cli
+2026-10-30T12:30:06.6171658Z   GH_AW_INFO_MODEL_CONFIG: {"routing":{"enabled":false},"models":{"allowed":[],"blocked":[]},"max_ai_credits_source":"default"}
+2026-10-30T12:30:06.6172607Z   GH_AW_INFO_MAX_AI_CREDITS: 1000
+2026-10-30T12:30:06.6173114Z   GH_AW_COMPILED_STRICT: true
+2026-10-30T12:30:06.6173583Z ##[endgroup]
+2026-10-30T12:30:06.7786791Z Starting context variable validation...
+2026-10-30T12:30:06.7795666Z ✓ github.event.repository.id is valid: 1439649501
+2026-10-30T12:30:06.7800103Z ✓ github.event.sender.id is valid: 169366090
+2026-10-30T12:30:06.7803533Z Validated 2 context variables
+2026-10-30T12:30:06.7806702Z ✅ All context variables validated successfully
+2026-10-30T12:30:06.7811271Z Lockdown mode not explicitly enabled, skipping validation
+2026-10-30T12:30:06.7814390Z Repository visibility: unknown
+2026-10-30T12:30:06.7817110Z Compiled with strict mode: true
+2026-10-30T12:30:06.7987740Z Generated merged models.json at: /tmp/gh-aw/models.json
+2026-10-30T12:30:06.7994130Z Generated aw_info.json at: /tmp/gh-aw/aw_info.json
+2026-10-30T12:30:06.7997331Z {
+2026-10-30T12:30:06.7997881Z   "engine_id": "copilot",
+2026-10-30T12:30:06.7998517Z   "engine_name": "GitHub Copilot CLI",
+2026-10-30T12:30:06.8035805Z   "model": "auto",
+2026-10-30T12:30:06.8036316Z   "version": "1.0.103",
+2026-10-30T12:30:06.8036788Z   "agent_version": "1.0.103",
+2026-10-30T12:30:06.8037697Z   "workflow_name": "Flux de travail : Mise à jour automatique du site GitHub Info de Mona",
+2026-10-30T12:30:06.8038905Z   "workflow_id": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8040651Z   "workflow_call_id": "41055782337-1:biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8042152Z   "caller_workflow_ref": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8043123Z   "experimental": false,
+2026-10-30T12:30:06.8043841Z   "supports_tools_allowlist": true,
+2026-10-30T12:30:06.8044359Z   "cache_memory": false,
+2026-10-30T12:30:06.8044815Z   "run_id": 41055782337,
+2026-10-30T12:30:06.8045254Z   "run_number": 1,
+2026-10-30T12:30:06.8045677Z   "run_attempt": "1",
+2026-10-30T12:30:06.8046175Z   "repository": "biadou/MONA-website-exercise",
+2026-10-30T12:30:06.8046749Z   "ref": "refs/heads/main",
+2026-10-30T12:30:06.8047252Z   "sha": "9952899570b9b4066a41231a4c7e0f816481fabc",
+2026-10-30T12:30:06.8047803Z   "actor": "biadou",
+2026-10-30T12:30:06.8048249Z   "event_name": "workflow_dispatch",
+2026-10-30T12:30:06.8048765Z   "target_repo": "",
+2026-10-30T12:30:06.8049195Z   "staged": false,
+2026-10-30T12:30:06.8049606Z   "dry_run": false,
+2026-10-30T12:30:06.8050025Z   "allowed_domains": [
+2026-10-30T12:30:06.8050673Z     "defaults"
+2026-10-30T12:30:06.8051068Z   ],
+2026-10-30T12:30:06.8051465Z   "firewall_enabled": true,
+2026-10-30T12:30:06.8051936Z   "awf_version": "v0.29.0",
+2026-10-30T12:30:06.8052406Z   "awmg_version": "",
+2026-10-30T12:30:06.8052836Z   "agent_runtime": "",
+2026-10-30T12:30:06.8053259Z   "steps": {
+2026-10-30T12:30:06.8053657Z     "firewall": "squid"
+2026-10-30T12:30:06.8054076Z   },
+2026-10-30T12:30:06.8054481Z   "created_at": "2026-10-30T12:30:06.782Z",
+2026-10-30T12:30:06.8055020Z   "cli_version": "v1.0.1",
+2026-10-30T12:30:06.8055506Z   "engine_harness": "copilot-cli",
+2026-10-30T12:30:06.8056433Z   "workflow_ref": "biadou/MONA-website-exercise/.github/workflows/update-mona-website.lock.yml@refs/heads/main",
+2026-10-30T12:30:06.8057402Z   "server_url": "https://github.com",
+2026-10-30T12:30:06.8057926Z   "model_config": {
+2026-10-30T12:30:06.8058342Z     "routing": {
+2026-10-30T12:30:06.8058794Z       "enabled": false
+2026-10-30T12:30:06.8059219Z     },
+2026-10-30T12:30:06.8059592Z     "models": {
+2026-10-30T12:30:06.8059995Z       "allowed": [],
+2026-10-30T12:30:06.8061258Z       "blocked": []
+2026-10-30T12:30:06.8061690Z     },
+2026-10-30T12:30:06.8062096Z     "max_ai_credits_source": "default",
+2026-10-30T12:30:06.8062643Z     "max_ai_credits": 1000
+2026-10-30T12:30:06.8063091Z   }
+2026-10-30T12:30:06.8063461Z }
+2026-10-30T12:30:06.8091517Z Generated workflow overview in step summary

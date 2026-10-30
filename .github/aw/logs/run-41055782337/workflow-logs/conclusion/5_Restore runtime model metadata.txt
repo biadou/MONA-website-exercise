@@ -1,0 +1,18 @@
+﻿2026-10-30T12:30:32.4366269Z ##[group]Run if [ -f /tmp/gh-aw/runtime/aw_info.json ]; then cp /tmp/gh-aw/runtime/aw_info.json /tmp/gh-aw/aw_info.json; fi
+2026-10-30T12:30:32.4368059Z [36;1mif [ -f /tmp/gh-aw/runtime/aw_info.json ]; then cp /tmp/gh-aw/runtime/aw_info.json /tmp/gh-aw/aw_info.json; fi[0m
+2026-10-30T12:30:32.4405499Z shell: /usr/bin/bash -e {0}
+2026-10-30T12:30:32.4406098Z env:
+2026-10-30T12:30:32.4406598Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-10-30T12:30:32.4407239Z   OTEL_SERVICE_NAME: gh-aw.update-mona-website
+2026-10-30T12:30:32.4409252Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=Flux%20de%20travail%20%3A%20Mise%20%C3%A0%20jour%20automatique%20du%20site%20GitHub%20Info%20de%20Mona,gh-aw.repository=biadou/MONA-website-exercise,gh-aw.run.id=41055782337,github.run_id=41055782337,gh-aw.engine.id=copilot
+2026-10-30T12:30:32.4411270Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-10-30T12:30:32.4411893Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-10-30T12:30:32.4412565Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-10-30T12:30:32.4414065Z   GH_AW_JOB_DISPLAY_NAMES: {"activation":"activation","agent":"agent","conclusion":"conclusion","detection":"detection","safe_outputs":"safe_outputs"}
+2026-10-30T12:30:32.4416102Z   GH_AW_JOB_RESULTS: {"activation":{"result":"failure"},"agent":{"result":"skipped"},"detection":{"result":"skipped"},"safe_outputs":{"result":"skipped"}}
+2026-10-30T12:30:32.4417749Z   GH_AW_JOB_TIMING_ELIGIBLE: {"activation":true,"agent":true,"conclusion":true,"detection":true,"safe_outputs":true}
+2026-10-30T12:30:32.4420868Z   GH_AW_RUNTIME_FEATURES: 
+2026-10-30T12:30:32.4421611Z   GITHUB_AW_OTEL_TRACE_ID: ad5fa475061c00fa2923eb87c4a01abf
+2026-10-30T12:30:32.4422421Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 232fd6711a796d32
+2026-10-30T12:30:32.4423156Z   GITHUB_AW_OTEL_JOB_START_MS: 1793363431391
+2026-10-30T12:30:32.4424100Z ##[endgroup]
