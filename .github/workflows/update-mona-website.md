@@ -3,9 +3,12 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
   issues: read
+
+safe-outputs:
+  create-pull-request:
+    title-prefix: "[agentic-update] "
 
 tools:
   github:
